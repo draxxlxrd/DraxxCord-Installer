@@ -101,7 +101,7 @@ else ifeq ($(PLATFORM),windows) # PLATFORM
 	export GOROOT=/mingw64/lib/go
 	export GOPATH=/mingw64
 
-	go-winres make --product-version "git-tag"
+	go-winres make --file-version "git-tag" --product-version "git-tag"
 	CGO_ENABLED=$(CGO) GOOS=$(PLATFORM) GOARCH=$(ARCH) \
 		go build -v -tags "$(TAGS)" \
 		-ldflags "$(LDFLAGS)" \
