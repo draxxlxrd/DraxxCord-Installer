@@ -511,7 +511,7 @@ func renderInstaller() g.Widget {
 			renderErrorCard(
 				DiscordYellow,
 				color.Black,
-				"**Github** and **vencord.dev** are the only official places to get Vencord. Any other site claiming to be us is malicious.\n"+
+				"**GitHub** is the official source for DraxxCord. Only download DraxxCord from official DraxxCord releases.\n"+
 					"If you downloaded from any other source, you should delete / uninstall everything immediately, run a malware scan and change your Discord password.",
 				90,
 			),
@@ -555,7 +555,7 @@ func renderInstaller() g.Widget {
 				}
 
 				if d.isPatched {
-					text += " (Vencord Installed)"
+					text += " (DraxxCord Installed)"
 				}
 
 				return g.Row(
