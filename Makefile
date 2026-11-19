@@ -105,7 +105,7 @@ else ifeq ($(PLATFORM),windows) # PLATFORM
 	CGO_ENABLED=$(CGO) GOOS=$(PLATFORM) GOARCH=$(ARCH) \
 		go build -v -tags "$(TAGS)" \
 		-ldflags "$(LDFLAGS)" \
-		-o build/VencordInstaller$(POSTFIX).exe
+		-o build/DraxxCordInstaller$(POSTFIX).exe
 
 else # PLATFORM
 	CGO_ENABLED=$(CGO) GOOS=$(PLATFORM) GOARCH=$(ARCH) go build \

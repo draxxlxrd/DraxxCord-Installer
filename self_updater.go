@@ -49,7 +49,7 @@ func GetInstallerDownloadLink() string {
 	const BaseUrl = "https://github.com/draxxlxrd/DraxxCord-Installer/releases/latest/download/"
 	switch runtime.GOOS {
 	case "windows":
-		filename := Ternary(buildinfo.UiType == buildinfo.UiTypeCli, "VencordInstallerCli.exe", "VencordInstaller.exe")
+		filename := Ternary(buildinfo.UiType == buildinfo.UiTypeCli, "DraxxCordInstallerCli.exe", "DraxxCordInstaller.exe")
 		return BaseUrl + filename
 	case "darwin":
 		return BaseUrl + "VencordInstaller.dmg"
